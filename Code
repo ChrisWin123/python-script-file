@@ -3,7 +3,7 @@ import time
 while True:
     print("Welcome to the Number Guessing Game!")
     print("I'm thinking of a number between 1 and 100.")
-    print("You have 5 chances to guess the correct number.")
+    print("You have a indefinite number of chances to guess the correct number.")
 
     difficulty = input('''
     Please select the difficulty level:
