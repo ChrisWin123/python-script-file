@@ -87,7 +87,6 @@ while True:
         print(f"the number of tries it took to get the number {i+1} ")
     elif choice != system:
         print(f"the number was {system}")
-        print(f"the number of tries it took to get the number {i+1} ")
     partial = input("Do you wish to contiune(Y/N): ").lower()
     if partial == "y":
         continue
