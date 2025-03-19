@@ -37,7 +37,7 @@ while True:
                     print("The number is too low! Try again.")
                     choice = int(input("enter your number of choice again: "))
                 else:
-                    print("You have not found the number yet", )
+                    print("You have not found the number yet")
             except ValueError:
                 print("This prompt was not understood by the system!!")
 
@@ -59,7 +59,7 @@ while True:
                     print("The number is too low! Try again.")
                     choice = int(input("enter your number of choice again: "))
                 else:
-                    print("You have not found the number yet", )
+                    print("You have not found the number yet")
             except ValueError:
                 print("This prompt was not understood by the system!!")
     elif difficulty == "hard":
@@ -80,7 +80,7 @@ while True:
                     print("The number is too low! Try again.")
                     choice = int(input("enter your number of choice again: "))
                 else:
-                    print("You have not found the number yet", )
+                    print("You have not found the number yet")
             except ValueError:
                 print("This prompt was not understood by the system!!")
     if choice == system:
