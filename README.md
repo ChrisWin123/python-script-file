@@ -1,5 +1,5 @@
 # python-script-file
-A personalized code for a program for a system to guess your number
+A simple Python program where you try to guess a randomly selected number between 1 and 100.
 
 How It Works:-
 The system randomly selects a number between 1 and 100.
