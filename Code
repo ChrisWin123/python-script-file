@@ -1,5 +1,3 @@
-
-
 import random
 import time
 while True:
@@ -33,10 +31,10 @@ while True:
                     print(f"You took {time_taken} seconds to guess the number.")
                     break
                 elif choice > system:
-                    print("The Number is to high! Try again.")
+                    print("The Number is too high! Try again.")
                     choice = int(input("enter your number of choice again: "))
                 elif choice < system:
-                    print("The number is to low! Try again.")
+                    print("The number is too low! Try again.")
                     choice = int(input("enter your number of choice again: "))
                 else:
                     print("You have not found the number yet", )
@@ -55,10 +53,10 @@ while True:
                     print(f"You took {time_taken} seconds to guess the number.")
                     break
                 elif choice > system:
-                    print("The Number is to high! Try again.")
+                    print("The Number is too high! Try again.")
                     choice = int(input("enter your number of choice again: "))
                 elif choice < system:
-                    print("The number is to low! Try again.")
+                    print("The number is too low! Try again.")
                     choice = int(input("enter your number of choice again: "))
                 else:
                     print("You have not found the number yet", )
@@ -76,10 +74,10 @@ while True:
                     print(f"You took {time_taken} seconds to guess the number.")
                     break
                 elif choice > system:
-                    print("The Number is to high! Try again.")
+                    print("The Number is too high! Try again.")
                     choice = int(input("enter your number of choice again: "))
                 elif choice < system:
-                    print("The number is to low! Try again.")
+                    print("The number is too low! Try again.")
                     choice = int(input("enter your number of choice again: "))
                 else:
                     print("You have not found the number yet", )
