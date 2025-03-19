@@ -20,7 +20,7 @@ while True:
         print("Invalid input! Please enter a number between 1 and 100.")
         continue
     if difficulty == "easy":
-        for i in range(0,10):
+        for i in range(1,10):
             try:
                 if choice == system:
                     print()
@@ -42,7 +42,7 @@ while True:
                 print("This prompt was not understood by the system!!")
 
     elif difficulty == "medium":
-        for i in range(0,5):
+        for i in range(1,5):
             try:
                 if choice == system:
                     print()
