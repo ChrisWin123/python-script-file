@@ -1,6 +1,7 @@
 # python-script-file
 A simple Python program where you try to guess a randomly selected number between 1 and 100.
 It has a repetition code structure as of now. I will improve my lines of code in the future
+
 How It Works:-
 The system randomly selects a number between 1 and 100.
 You choose a difficulty level:
