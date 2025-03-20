@@ -1,3 +1,4 @@
+
 import random
 import time
 while True:
@@ -9,12 +10,12 @@ while True:
 
     print()
 
-    difficulty = input(
+    difficulty = input('''
     Please select the difficulty level:
     1. Easy (10 chances)
     2. Medium (5 chances)
     3. Hard (3 chances)
-    ).lower()
+    ''').lower()
 
 
     system = random.randint(1,100)
@@ -24,20 +25,21 @@ while True:
     except ValueError:
         print("Invalid input! Please enter a number between 1 and 100.")
         continue
-#    print(system) if you want to check if the system is working and find the answer quickly..
+    #print(system) if you want to check if the system is working and find the answer quickly..
 
+    def user_correct():
+        if choice == system:
+            print()
+            print("YOU GOT THE NUMBER CONGRANTS")
+            end_time = time.time()
+            time_taken = round(end_time - start_time, 2)
+            print()
+            print(f"You took {time_taken} seconds to guess the number.")
+        return
     def code_repeat(x):
         global choice
         try:
-            if choice == system:
-                print()
-                print("YOU GOT THE NUMBER CONGRANTS")
-                end_time = time.time()
-                time_taken = round(end_time - start_time, 2)
-                print()
-                print(f"You took {time_taken} seconds to guess the number.")
-
-            elif choice > system:
+            if choice > system:
                 print("The Number is to high! Try again.")
                 choice = int(input("enter your number of choice again: "))
 
@@ -56,20 +58,26 @@ while True:
        for i in range(1,10):
            a = code_repeat(i)
            if choice == system:
+               b = user_correct()
                break
+
+
     elif difficulty == "medium":
         for i in range(1,5):
             a = code_repeat(i)
             if choice == system:
+                b = user_correct()
                 break
     elif difficulty == "hard":
         for i in range(1,3):
             a = code_repeat(i)
             if choice == system:
+                b = user_correct()
                 break
 
+
     if choice == system:
-        print(f"the number was {system}")
+        print(f"the number was {system} CONGRATS🎈🎉🎉🎈")
         print(f"the number of tries it took to get the number was {i+1} tries ")
     elif choice != system:
         print(f"the number was {system}")
@@ -79,3 +87,4 @@ while True:
         continue
     else:
         break
+
