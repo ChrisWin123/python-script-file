@@ -25,8 +25,11 @@ Features:-
 ✔Error handling for invalid inputs
 ✔ Play again option
 
-
 [Number Guessing Game ](https://roadmap.sh/projects/number-guessing-game)
+
+
+--------------------------------------------------------------------------------------------
 Note:-
 License
 This project is open-source and available under the MIT License.
+--------------------------------------------------------------------------------------------
