@@ -1,0 +1,81 @@
+import random
+import time
+while True:
+    print()
+
+    print("Welcome to the Number Guessing Game!")
+    print("I'm thinking of a number between 1 and 100.")
+    print("You have 5 chances to guess the correct number.")
+
+    print()
+
+    difficulty = input(
+    Please select the difficulty level:
+    1. Easy (10 chances)
+    2. Medium (5 chances)
+    3. Hard (3 chances)
+    ).lower()
+
+
+    system = random.randint(1,100)
+    start_time = time.time()
+    try:
+        choice = int(input("enter your number of choice: "))
+    except ValueError:
+        print("Invalid input! Please enter a number between 1 and 100.")
+        continue
+#    print(system) if you want to check if the system is working and find the answer quickly..
+
+    def code_repeat(x):
+        global choice
+        try:
+            if choice == system:
+                print()
+                print("YOU GOT THE NUMBER CONGRANTS")
+                end_time = time.time()
+                time_taken = round(end_time - start_time, 2)
+                print()
+                print(f"You took {time_taken} seconds to guess the number.")
+
+            elif choice > system:
+                print("The Number is to high! Try again.")
+                choice = int(input("enter your number of choice again: "))
+
+            elif choice < system:
+                print("The number is to low! Try again.")
+                choice = int(input("enter your number of choice again: "))
+
+            else:
+                print("You have not found the number yet", )
+
+        except ValueError:
+            print("This prompt was not understood by the system!!")
+        return x
+
+    if difficulty == "easy":
+       for i in range(1,10):
+           a = code_repeat(i)
+           if choice == system:
+               break
+    elif difficulty == "medium":
+        for i in range(1,5):
+            a = code_repeat(i)
+            if choice == system:
+                break
+    elif difficulty == "hard":
+        for i in range(1,3):
+            a = code_repeat(i)
+            if choice == system:
+                break
+
+    if choice == system:
+        print(f"the number was {system}")
+        print(f"the number of tries it took to get the number was {i+1} tries ")
+    elif choice != system:
+        print(f"the number was {system}")
+        print(f"the number of tries it took to get the number was {i+1} tries ")
+    partial = input("Do you wish to contiune(Y/N): ").lower()
+    if partial == "y":
+        continue
+    else:
+        break
